@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+.ChatMain {
+    height: 500px;
+    overflow-y: scroll;
+    background:rgba(0,0,0,0.2);
+    backdrop-filter: blur(5px);
+    border-radius: 0.9rem;
+    border: 1px solid #000;
+}
+.ChatDiv {
+    word-break:break-all;
+}
+.ChatBox {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px;
+    max-width: 200px;
+    min-height: 40px;
+    text-align: left;
+    font-family: 'GmarketSansMedium';
+    font-size: 15px;
+    transition: 0.5s;
+    backdrop-filter: blur(5px);
+}
+.ChatBox:hover {
+    scale: 1.5;
+}
+.BotChat {
+    margin-left: 70px;
+    background:rgba(255, 73, 131, 0.7);
+    color: #fff;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 10px 1px #1f1f1f ;
+}
+.ChatBotImg {
+    margin-top: 10px;
+    margin-left: 10px;
+    float: left;
+    width: 50px;
+}
+.MyChat {
+    margin-left: auto;
+    margin-right: 20px;
+    background:rgba(73, 137, 255, 0.7);
+    color: #fff;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 10px 1px #1f1f1f ;
+}
+.MyChat:hover {
+    margin-right: 80px;
+}

@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'SEBANG_Gothic_Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/SEBANG_Gothic_Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.Header {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    background:rgba(54, 54, 54, 0.1);
+    backdrop-filter: blur(5px);
+    box-shadow: 5px 5px 10px 1px #1f1f1f ;
+}
+.HeadDiv {
+    position: relative;
+    width: 800px;
+    left: 50%;
+    margin-left: -400px;
+}
+.ChatGPT {
+    position: relative;
+    top: -10px;
+    width: 100px;
+    left: 44%;
+    margin-left: -50px;
+    font-family: 'SEBANG_Gothic_Bold';
+    font-size: 20px;
+    color: #fff;
+}
+.ChaeJinImg {
+    position: relative;
+    top: 2px;
+    width: 40px;
+    left: 50%;
+    margin-left: -20px;
+}
+.ChaeJin {
+    position: relative;
+    top: -10px;
+    width: 100px;
+    left: 60%;
+    margin-left: -50px;
+    font-family: 'SEBANG_Gothic_Bold';
+    font-size: 20px;
+    color: #ff447f;
+    text-shadow: -1px 0px #ffffff, 0px 1px #ffffff, 1px 0px #ffffff, 0px -1px #ffffff;
+}

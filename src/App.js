@@ -1,23 +1,29 @@
-import logo from './logo.svg';
+/* eslint-disable */
 import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import React, { useState, useRef } from 'react';
+import Chat from './IndexJs/Chat';
+import Input from './IndexJs/Input';
+import Header from './IndexJs/Header';
 
-function App() {
+const App = () => {
+  const [inputData, setInputData] = useState({
+    content: ''
+  })
+  const onCopy = (data) => {
+    setInputData(data.content)
+  }
+  const btnRef = useRef(null);
+  const MyChatBtnRef = () => {
+    btnRef.current.getBtnHandle();
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <div className='AppChat'>
+      <Chat inputData={inputData} ref={btnRef}/>
+      <Input onCopy={onCopy} MyChatBtnRef={MyChatBtnRef}/>
+      </div>
     </div>
   );
 }
